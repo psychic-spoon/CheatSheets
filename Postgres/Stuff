@@ -1,0 +1,3 @@
+
+#Exporting the data from postgres
+\COPY (SELECT ROW_TO_JSON(t) from (SELECT * FROM CONTENT limit 10000) t) TO '/home/ashish/model/train';
