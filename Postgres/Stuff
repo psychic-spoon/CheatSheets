@@ -1,3 +1,9 @@
 
 #Exporting the data from postgres
 \COPY (SELECT ROW_TO_JSON(t) from (SELECT * FROM CONTENT limit 10000) t) TO '/home/ashish/model/train';
+
+#SQL
+\l;                   list databases
+\connect db_name;
+\dt                   list tables
+\d+ table_name        describe scheme of table_name 
