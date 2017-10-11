@@ -7,3 +7,13 @@
 \connect db_name;
 \dt                   list tables
 \d+ table_name        describe scheme of table_name 
+
+\conninfo
+select inet_server_addr();
+
+
+Extracting data from database
+\t
+\a
+\o /home/gooruapp/test/latest.json
+select row_to_json(original_resource) from original_resource where taxonomy is not null and subject is not null;
