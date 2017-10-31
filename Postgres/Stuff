@@ -17,3 +17,7 @@ Extracting data from database
 \a
 \o /home/gooruapp/test/latest.json
 select row_to_json(original_resource) from original_resource where taxonomy is not null and subject is not null;
+
+
+Changing the datatype
+ALTER TABLE table_name ALTER column_name SET DATA TYPE uuid;

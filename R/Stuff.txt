@@ -1,10 +1,92 @@
 #The [1] in the start of the prompt indicate that variable is vector and first printed element is the first element of the vector.
 
 x <- 11:30
-x              #Auto Printing
+x              #This is Auto Printing
  [1] 11 12 13 14 15 16 17 18 19 20 21 22
 [13] 23 24 25 26 27 28 29 30
 
 
 #2. Auto Printing doesn't work in the scripting environments.
 #	Use explicit print(var) for this purpose.
+
+#3. Vector is like array in R. It contains object of same class.
+#  x <- vector("numeric",length=10)    #Constructing a vector
+x
+ [1] 0 0 0 0 0 0 0 0 0 0
+
+ When given two vectors of the same length, R simply performs the specified arithmetic operation (`+`, `-`, `*`, etc.)
+element-by-element. If the vectors are of different lengths, R 'recycles' the shorter vector until it is the same length
+as the longer vector.
+
+Behind the scenes, R is 'recycling' the 2 to make a vector of 2s and the 100 to make a vector of 100s. In other words,
+when you ask R to compute z * 2 + 100, what it really computes is this: z * c(2, 2, 2) + c(100, 100, 100).
+
+# When different class objects are in vector, coercion occurs. R tries to bring them to common class.
+numeric, character boils down to character.
+
+#4. Explicit Coercion
+x <- 0:6
+class(x)
+[1] "integer"
+
+as.numeric(x)
+[1] 0 1 2 3 4 5 6
+
+as.logical(x)
+[1] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+
+as.character(x)
+[1] "0" "1" "2" "3" "4" "5" "6"  
+
+Sometimes R can't figure out how to coerce, then NAs are introduced
+x <- c("a", "b", "c")
+as.numeric(x)
+Warning: NAs introduced by coercion
+[1] NA NA NA
+
+#5. Matrices
+
+x <- matrix(1:12 ,nrow=3 ,ncol=4)
+m <- 1:12
+dim(m) <- c(3,4)
+
+cbind(x,y)
+rbind(x,y)
+
+#6. Factors are used to represent categorical data.
+x <- factor(c("yes", "yes", "no", "yes", "no")) 
+x
+[1] yes yes no  yes no 
+Levels: no yes
+table(x) 
+x
+ no yes 
+  2   3 
+## See the underlying representation of factor
+unclass(x)  
+[1] 2 2 1 2 1
+
+#7. NA values have a class also, so there are integer NA, character NA, etc.
+A NaN value is also NA but the converse is not true
+
+
+#8. R objects can have names, which is very useful for writing readable code and self-describing objects.
+x <- 1:3
+names(x)
+NULL
+names(x) <- c("New York", "Seattle", "Los Angeles") 
+x
+
+Object		  Set column names		Set row names
+
+data frames		names()				row.names()
+matrix			colnames()			rownames()
+
+
+#############################################################################
+A tidy dataset has the following properties:
+
+Each variable forms a column.
+Each observation forms a row.
+Each type of observational unit forms a table.
+
