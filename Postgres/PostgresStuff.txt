@@ -1,0 +1,28 @@
+#SQL
+\l;                   list databases
+\connect db_name;
+\dt                   list tables
+\d+ table_name        describe scheme of table_name 
+
+#Getting data source ip for the database
+\conninfo
+select inet_server_addr();
+
+#Extracting data from database in json format
+\t
+\a
+\o /home/gooruapp/test/latest.json
+select row_to_json(original_resource) from original_resource where taxonomy is not null and subject is not null;
+
+#Changing the datatype of column ( Don't use varchar for uuid)
+ALTER TABLE table_name ALTER column_name SET DATA TYPE uuid;
+
+#Extracting data from table in CSV format
+\copy (select id,taxonomy_domain_id from taxonomy_code) to '/home/gooruapp/tc.csv' CSV DELIMITER ',';
+
+#Exporting the data from postgres(This one don't give in the format we want)
+\COPY (SELECT ROW_TO_JSON(t) from (SELECT * FROM CONTENT limit 10000) t) TO '/home/ashish/model/train';
+
+#After install first login
+sudo -u postgres psql postgres
+\password postgres

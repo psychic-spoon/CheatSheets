@@ -1,7 +1,4 @@
 
-#Exporting the data from postgres
-\COPY (SELECT ROW_TO_JSON(t) from (SELECT * FROM CONTENT limit 10000) t) TO '/home/ashish/model/train';
-
 #SQL
 \l;                   list databases
 \connect db_name;
@@ -10,7 +7,6 @@
 
 \conninfo
 select inet_server_addr();
-
 
 Extracting data from database
 \t
@@ -21,3 +17,7 @@ select row_to_json(original_resource) from original_resource where taxonomy is n
 
 Changing the datatype
 ALTER TABLE table_name ALTER column_name SET DATA TYPE uuid;
+
+
+#Exporting the data from postgres
+\COPY (SELECT ROW_TO_JSON(t) from (SELECT * FROM CONTENT limit 10000) t) TO '/home/ashish/model/train';
