@@ -1,0 +1,9 @@
+http://www.sthda.com/english/wiki/text-mining-and-word-cloud-fundamentals-in-r-5-simple-steps-you-should-know
+
+
+##########################
+Clean Up
+##########################
+fulltext<-paste(dataset[,3],collapse = " ")
+require(stringr)
+str_count(fulltext, "\\S+")

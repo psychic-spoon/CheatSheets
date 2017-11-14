@@ -1,0 +1,9 @@
+#For communication between mysql and flaskapp
+pip install flask-mysqldb;
+
+
+#For installing WT Forms
+pip install Flask-WTF
+
+#Password
+pip install passlib
