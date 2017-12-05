@@ -1,0 +1,16 @@
+Coding
+	LeetCode-Premium
+	CommonLounge
+	GeeksForGeeks
+
+
+Design
+	highscalability
+	gainlo
+	youtube design series
+
+Company
+	Rubrik
+	Codenation
+	DirectI
+	Flipkart

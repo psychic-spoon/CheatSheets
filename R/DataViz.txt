@@ -1,0 +1,27 @@
+#Represents the nature of data
+#Exploratory and Explanotory
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#Grammer
+
+Data
+Aesthetics   --> Scales onto which the data is mapped			     axis,colour,size,alpha,line width,fill,shape
+Geometries   --> Visual elements used for the data                               point/line/histogram/bar/boxplot
+----------------------------------------------------------
+Facets																 columns,rows
+Statistics   --> Representations of our data to aid understanding    binning,smoothing,descriptive,inferential
+Coordinates  --> The space on which the data will be plotted         cartesian,fixed,polar,limits
+Themes       --> All non-data ink
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+library(ggplot2)
+
+Scatter Plot
+ggplot(data,aes(x=,y=,color=cat,size=cat))+
+	geom_point(alpha=0.6)+
+	facet_grid(. ~ cat)+
+	coord_fixed()+
+	scale_x_log10()+
+	scale_y_log10()+
+	stat_smooth(method="lm",col="red",se=FALSE,size=1)     //linear line
+

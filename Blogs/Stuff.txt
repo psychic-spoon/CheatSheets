@@ -1,0 +1,7 @@
+https://blog.miguelgrinberg.com/post/serverless-deployments-of-python-apis
+
+https://realpython.com/blog/python/flask-by-example-implementing-a-redis-task-queue/
+
+https://www.digitalocean.com/community/tutorials/
+
+Medium

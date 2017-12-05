@@ -1,0 +1,4 @@
+http://www.exegetic.biz/blog/2013/05/introducing-r-plotting-categorical-variables/
+
+To know the arguments of a function
+args(function_name)

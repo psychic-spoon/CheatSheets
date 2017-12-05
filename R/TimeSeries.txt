@@ -1,0 +1,23 @@
+t(vector object) ============> ts
+(sequence)
+
+Trend+Seasonal+Cyclical+Irregular
+
+Steps
+
+1. Plot the data over a period of time. (time should be of same unit)
+
+2. Non-Stationary data( Contains Irregular or Seasonal spikes). Make the data stationary.
+
+3. Identify the model technique that best suited for you forecasting.
+
+4. Build the model and do the forecasting.
+
+
+Models:
+Moving Averages
+Exponential Moving Averages
+Least Square Regression
+Quadratic Regression
+Exponential Regression
+ARIMA Models
