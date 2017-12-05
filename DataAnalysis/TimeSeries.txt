@@ -5,7 +5,20 @@
 ### Notes
 
 ####Stationary Time Series
-	-Stationary time series is one whose mean and variance is constant over time. A stationarized series is relatively easy to predict: you simply predict that its statistical properties will be the same in the future as they have been in the past!
-	- The predictions for the stationarized series can then be "untransformed," by reversing whatever mathematical transformations were previously used, to obtain predictions for the original series.
+	-Stationary time series is one whose mean and variance is constant over time. 
+	A stationarized series is relatively easy to predict: you simply predict that 
+	its statistical properties will be the same in the future as they have been 
+	in the past!
+	
+	- The predictions for the stationarized series can then be "untransformed," by
+	 reversing whatever mathematical transformations were previously used, to 
+	 obtain predictions for the original series.
 
-	-_Most business and economic time series are far from stationary when expressed in their original units of measurement, and even after deflation or seasonal adjustment they will typically still exhibit trends, cycles, random-walking, and other non-stationary behavior._
+	-_Most business and economic time series are far from stationary when expressed
+	 in their original units of measurement, and even after deflation or seasonal 
+	 adjustment they will typically still exhibit trends, cycles, random-walking,
+	  and other non-stationary behavior._
+
+
+
+@octocat :+1: This looks great
