@@ -1,3 +1,6 @@
+Using medium for everything
+
+
 http://www.exegetic.biz/blog/2013/05/introducing-r-plotting-categorical-variables/
 
 To know the arguments of a function
