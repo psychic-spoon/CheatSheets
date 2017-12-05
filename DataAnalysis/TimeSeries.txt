@@ -38,8 +38,7 @@ time series data is that the error terms are correlated with each other.
 
 :+1: This looks great
 
-**Resource** 
-
-[Time Series Duke University](https://people.duke.edu/~rnau/411home.htm)
-
-[Using dplyr](https://blog.exploratory.io/introducing-time-series-analysis-with-dplyr-60683587cf8a)
+**Resources** 
+- [Time Series Duke University](https://people.duke.edu/~rnau/411home.htm) 
+- [Using dplyr](https://blog.exploratory.io/introducing-time-series-analysis-with-dplyr-60683587cf8a) 
+- [Time Series Components](https://www.linkedin.com/pulse/everything-time-series-analysis-components-data-saranya-anandh/)
