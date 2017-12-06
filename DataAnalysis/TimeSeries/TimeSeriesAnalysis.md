@@ -16,15 +16,18 @@
 
 ![](https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAf9AAAAJGJiZjUxMDEzLTU3MzItNDIzNy04ODllLTE5MjYwYWMwYWYyNQ.png)
 
-#### Overall Steps
+##### Smoothening
+- Analysis of time series usually involves smoothening of the time series curve
+- Smoothening essentially involves reducing the number of points thus reducing variability
+
+
+#### **Overall Steps of Analysis**
 - Plot data to see the presence of different components of time series
 - Model Trend and Seasonality
 - After removing trend seasonality, model the remaining data as autoregressive part and  noise part
 - Use an additive or multiplicative model for forecasting using the components identified
 - Compute residuals by comparing forecast with actuals
 - Confirm that residuals is actually noise
-
-
 
 
 #### [Stationary Time Series](https://people.duke.edu/~rnau/411diff.htm)
@@ -53,5 +56,3 @@ time series data is that the error terms are correlated with each other.
 - [Time Series Duke University](https://people.duke.edu/~rnau/411home.htm) 
 - [Using dplyr](https://blog.exploratory.io/introducing-time-series-analysis-with-dplyr-60683587cf8a) 
 - [Time Series Components](https://www.linkedin.com/pulse/everything-time-series-analysis-components-data-saranya-anandh/)
-
-About
