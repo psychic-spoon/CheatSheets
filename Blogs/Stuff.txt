@@ -4,4 +4,8 @@ https://realpython.com/blog/python/flask-by-example-implementing-a-redis-task-qu
 
 https://www.digitalocean.com/community/tutorials/
 
+
+#Data Science Blog
+http://t-redactyl.io
+
 Medium

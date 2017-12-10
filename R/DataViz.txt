@@ -25,3 +25,36 @@ ggplot(data,aes(x=,y=,color=cat,size=cat))+
 	scale_y_log10()+
 	stat_smooth(method="lm",col="red",se=FALSE,size=1)     //linear line
 
+
+
+################################################################
+#### Histogram
+![R-Bloggers](https://www.r-bloggers.com/how-to-make-a-histogram-with-ggplot2/)
+![Awesome Histograms](http://t-redactyl.io/blog/2016/02/creating-plots-in-r-using-ggplot2-part-7-histograms.html)
+
+ggplot(train_data,aes(country)) + 
+  geom_histogram(stat="count",col="red",aes(fill=..count..))+
+  geom_density() +
+  labs(title="Histogram for Country") +
+  labs(x="Country", y="Count") +
+  theme_bw()
+
+dat_country<-sqldf("Select country,count(*) Count from train_data group by country")
+ggplot(dat_country,aes(x=country,y=Count)) + 
+  geom_bar(stat="Identity",colour="black",fill="#56B4E9")+
+  labs(title="Histogram for Country") +
+  labs(x="Country", y="Count") +
+  theme_bw()
+################################################################
+#### PieChart
+![Pie](http://www.sthda.com/english/wiki/ggplot2-pie-chart-quick-start-guide-r-software-and-data-visualization)
+
+ggplot(dat_country,aes(x="",y=Count,fill=country))+
+  geom_bar(width=1,stat = "identity")+
+  theme_bw()
+
+ggplot(dat_country,aes(x="",y=Count,fill=country))+
+  geom_bar(width=1,stat = "identity")+
+  coord_polar("y",start=0)+
+  theme_bw()
+################################################################

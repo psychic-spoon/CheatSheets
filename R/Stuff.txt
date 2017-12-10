@@ -1,3 +1,16 @@
+
+# system command in windows
+download.file("http://simonsoftware.se/other/xkcd.ttf",
+              dest="xkcd.ttf", mode="wb")
+system("cmd.exe",input="mkdir fonts")
+system("cmd.exe",input = "copy xkcd.ttf fonts")
+font_import(paths = "fonts", pattern="[X/x]kcd")
+fonts()
+loadfonts()
+
+
+
+
 #The [1] in the start of the prompt indicate that variable is vector and first printed element is the first element of the vector.
 
 x <- 11:30

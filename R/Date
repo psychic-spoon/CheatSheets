@@ -1,0 +1,20 @@
+### Date
+
+#### Formatting Date
+dat <- as.Date(dataset$InvoiceDate,format = "%d-%m-%Y")
+dataset$month <- month(as.POSIXlt(dat, format="%Y-%m-%d"))
+dataset$year <- year(as.POSIXlt(dat, format="%Y-%m-%d"))
+dataset$day <- day(as.POSIXlt(dat, format="%Y-%m-%d"))
+
+dataset$Time =as.Date(dataset$InvoiceDate,format="%d-%m-%Y %H:%M")
+
+dataset$month <- factor(dataset$month)
+dataset$year <- factor(dataset$year)
+dataset$day <- factor(dataset$day)
+
+
+
+as.Date(15103, origin="1970-01-01")
+
+#### Getting weekday out of unixtime
+wday <- function(x) as.POSIXlt(x,origin="1970-01-01")$wday
