@@ -58,3 +58,18 @@ ggplot(dat_country,aes(x="",y=Count,fill=country))+
   coord_polar("y",start=0)+
   theme_bw()
 ################################################################
+
+ corrplot(cor(train_data[,c(13,15,16)]))
+
+ ggplot(train_data,aes(x=month,fill=final_status)) + 
+  geom_bar(stat="count")+
+  labs(title="Histogram for Month") +
+  labs(x="Month", y="No. of Projects") +
+  theme_bw()
+
+ggplot(train_data, aes(x=year,fill=final_status)) + 
+  geom_histogram(stat="count")+
+  theme_bw()
+
+qplot(Petal.Length, Petal.Width, colour = Species, shape = Predicted, 
+   data = iris)  

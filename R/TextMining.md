@@ -2,9 +2,8 @@
 
 ![Basics](http://programminghistorian.github.io/ph-submissions/lessons/published/basic-text-processing-in-r)
 
-###
-Clean Up
-###
+### Clean Up
+Complete text of a column
 fulltext<-paste(dataset[,3],collapse = " ")
 require(stringr)
 str_count(fulltext, "\\S+")
