@@ -1,11 +1,11 @@
+#Python
 https://blog.miguelgrinberg.com/post/serverless-deployments-of-python-apis
-
 https://realpython.com/blog/python/flask-by-example-implementing-a-redis-task-queue/
-
 https://www.digitalocean.com/community/tutorials/
 
+#SpringBoot | Spring 
+https://www.callicoder.com/categories/spring-boot/page/2/
+http://www.baeldung.com/spring-scheduled-tasks
 
 #Data Science Blog
 http://t-redactyl.io
-
-Medium
