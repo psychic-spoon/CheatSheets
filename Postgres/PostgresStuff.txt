@@ -37,6 +37,7 @@ Ignoring duplicate records
 ##############################################################################################
 on conflict do nothing
 
+
 ####################################################################################################################
 #Querying Json fields
 ####################################################################################################################
@@ -49,6 +50,11 @@ CREATE TABLE json_test (
   id serial primary key,
   data jsonb
 );
+
+#######################################
+Inner Level Querrying in JSON field
+#######################################
+select data->'payload'->'wlc'->'ops'->'network'->'dhcp' from test;
 
 INSERT INTO json_test (data) VALUES 
   ('{}'),
