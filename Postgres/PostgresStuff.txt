@@ -56,6 +56,10 @@ Inner Level Querrying in JSON field
 #######################################
 select data->'payload'->'wlc'->'ops'->'network'->'dhcp' from test;
 
+select events->>'snr' as SNR from wireless, jsonb_array_elements(wireless_data->'payload'->'wlc'->'ops'->'wireless'->'cl_events') cl_events, jsonb_array_elements(cl_events->'events') events where events @> '{"index": 37}';
+
+#####################################################################################
+
 INSERT INTO json_test (data) VALUES 
   ('{}'),
   ('{"a": 1}'),
