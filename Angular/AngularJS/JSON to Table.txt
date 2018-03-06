@@ -1,0 +1,22 @@
+# Printing and Downloading JSON to grid view 
+
+#Controller
+$scope.list=$scope.commitData.listCommitData;
+$scope.getArray = $scope.list;
+$scope.getHeader = function () {return ["Commit Type","Stream Name","Style","Date"]};
+
+#View
+<button class="btn btn-primary" ng-csv="getArray" csv-header="getHeader()" filename="{{ filename }}.csv">Download</button>
+        <input type="text" id="filename" ng-model="filename" placeholder="filename">
+
+                <table class="table table-bordered table-responsive">
+                    <tr>
+                        <th>Commit Type</th>
+                        <th>Date</th>
+                        <th>Stream Name</th>
+                        <th>Style</th>
+                    </tr>
+                    <tr ng-repeat="record in list">
+                        <td ng-repeat="(key,value) in record">{{value}}</td>
+                    </tr>
+                </table>
