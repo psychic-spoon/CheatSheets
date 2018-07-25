@@ -16,3 +16,11 @@ http://t-redactyl.io
 https://www.moneycontrol.com/technicals/breakout/negative/avg200/index.htmlt
 https://nseguide.com/beginners-guide-to-stock-markets/
 https://nseguide.com/7-ways-to-shortlist-the-right-stocks/
+#StockKeeper
+https://sowmayjain.com/2017/03/11/bse-announcement/
+https://bsenotifier.quora.com/
+https://bsenotifier.com/
+https://trendlyne.com/alerts/
+
+#NodeJS
+BSE Exchange provides data in XML format which is changeable. Currently, I'm using Cheerio on NodeJS.
