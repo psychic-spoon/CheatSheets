@@ -1,7 +1,9 @@
 #Python
 https://blog.miguelgrinberg.com/post/serverless-deployments-of-python-apis
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 https://realpython.com/blog/python/flask-by-example-implementing-a-redis-task-queue/
 https://www.digitalocean.com/community/tutorials/
+https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
 
 #SpringBoot | Spring 
 https://www.callicoder.com/categories/spring-boot/page/2/
@@ -9,3 +11,8 @@ http://www.baeldung.com/spring-scheduled-tasks
 
 #Data Science Blog
 http://t-redactyl.io
+
+#Stocks
+https://www.moneycontrol.com/technicals/breakout/negative/avg200/index.htmlt
+https://nseguide.com/beginners-guide-to-stock-markets/
+https://nseguide.com/7-ways-to-shortlist-the-right-stocks/
