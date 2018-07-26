@@ -21,6 +21,14 @@ https://sowmayjain.com/2017/03/11/bse-announcement/
 https://bsenotifier.quora.com/
 https://bsenotifier.com/
 https://trendlyne.com/alerts/
+#Stratergy
+https://tradingsim.com/blog/200-day-simple-moving-average/
 
 #NodeJS
 BSE Exchange provides data in XML format which is changeable. Currently, I'm using Cheerio on NodeJS.
+
+#Software Engineering
+https://blog.keen.io/architecture-of-giants-data-stacks-at-facebook-netflix-airbnb-and-pinterest-9b7cd881af54
+https://www.linkedin.com/pulse/streaming-data-engineering-analytics-netflix-brian-sullivan/
+https://medium.com/hasbrain/a-typical-data-engineering-project-sharing-from-netflix-data-engineering-team-cc27878fce55
+https://www.ibm.com/developerworks/library/ws-soa-eda-esb/index.html
