@@ -23,6 +23,7 @@ https://bsenotifier.com/
 https://trendlyne.com/alerts/
 #Stratergy
 https://tradingsim.com/blog/200-day-simple-moving-average/
+Seasonality Pattern
 
 #NodeJS
 BSE Exchange provides data in XML format which is changeable. Currently, I'm using Cheerio on NodeJS.
