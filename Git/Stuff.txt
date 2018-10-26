@@ -1,2 +1,15 @@
 #File size problem
 git config http.postBuffer 524288000
+
+#Wanna merge many commits into one
+To squash four commits into one, do the following:
+
+$ git rebase -i HEAD~4
+
+#Important: If you've already pushed commits to GitHub, and then squash them locally, 
+you will have to force the push to your branch.
+
+$ git push origin branch-name --force
+Helpful hint: You can always edit your last commit message, before pushing, by using:
+
+$ git commit --amend
