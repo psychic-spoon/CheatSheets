@@ -45,3 +45,31 @@ s="psychic-spoon"
 # print(str(lst))
 
 '''Reversing a list'''
+#Slice
+# s="2 3 4 5 6"
+# lst=[int(x) for x in s.split()]
+# print(str(lst))
+
+# start=time.time()
+# time.sleep(1)
+# print(lst[::-1])
+# elapsed=time.time()-start
+# print("Slice Method:"+str(elapsed))
+
+# #Method
+# start=time.time()
+# time.sleep(1)
+# lst.reverse()
+# print(str(lst))
+# elapsed=time.time()-start
+# print("Slice Method:"+str(elapsed))
+# lst.reverse()
+
+# #List Reversed
+# start=time.time()
+# time.sleep(1)
+# lst=list(reversed(lst))
+# print(str(lst))
+# elapsed=time.time()-start
+# print("Slice Method:"+str(elapsed))
+
