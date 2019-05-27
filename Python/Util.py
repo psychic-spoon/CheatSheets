@@ -73,3 +73,7 @@ s="psychic-spoon"
 # elapsed=time.time()-start
 # print("Slice Method:"+str(elapsed))
 
+# def remove_prefix(f,prefix):
+#     rsl = f[len(prefix):] if f.startswith(prefix) else f
+#     return rsl
+
