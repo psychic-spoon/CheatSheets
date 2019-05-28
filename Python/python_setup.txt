@@ -1,0 +1,41 @@
+Python
+First, we need to create a directory in which our install will take place. Make a directory with a name of your choosing, then enter inside the directory. Once you are in your new directory, enter the following command to download the compressed Python source file.
+
+wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+Once the file is finished downloading, uncompress the file by using tar, then enter into the new directory that was just created:
+
+tar -xJf Python-3.6.4.tar.xz
+cd Python-3.6.4
+Step 3: Run the configuration script.
+Use the following command to have the installation software check your system before actually starting the installation process.
+
+./configure --prefix=/data/py/python/Python-3.6.4
+This command ensures that the install will work, along with creating a special ‘makefile’ that is unique to your system. This makefile is what you will use to install Python onto your system.
+
+Step 4: Install Python.
+Now we can finally execute the makefile. Run the following command to install Python onto your system. Note: This will take a few minutes. The speed of the compilation and install will depend on the speed of your processor.
+
+First we run the ‘make’ command which compiles the program.
+
+make
+Then, once that is finished, we can run the installation command.
+
+make install
+
+
+Pip
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+/data/py/python/Python-3.6.4/bin/python3  get-pip.py
+
+Step 5:
+export PATH=/data/py/python/Python-3.6.4:${PATH}
+export PATH=/data/py/python/Python-3.6.4/bin:${PATH}
+export WORKON_HOME=~/Envs
+source /data/py/python/Python-3.6.4/bin/virtualenvwrapper.sh
+
+
+
+ 
+
+Please set the environment variables so that Python and Pip would be available.
