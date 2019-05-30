@@ -45,7 +45,8 @@ NEXT TIME
 =========
 make necessary changes to the code
 
-validate using 'git status' and see changes that you have just made
+validate using 'git status' and see changes that you have just made.
+It will list the files you created or modified.
    1. validate all the code that has changed
    2. validate the branch it is pointing to
 
@@ -63,7 +64,32 @@ if you want to add only specific file, use following
 make object locally with your changes 
    git commit -m "some cosmetic changes"
 
-
 push changes to cloud git repository
    git push 
 notice that subsequent time, we do do not have to use "--set-upstream origin ktrivedi_dev"
+
+
+BRANCH WITH NO COMMON PARENT 
+Not HAVING ANY EXISTING files
+=============================
+git checkout --orphan branchname
+git rm -rf .
+After doing that you can create, add, and commit new files and the resulting branch will have no common history with any other branches in your project (unless you merge them at some point)
+
+
+FIX FILE SIZE PROBLEM
+=============================
+git config http.postBuffer 524288000
+
+
+MERGE MANY COMMITS INTO one
+=============================
+To squash four commits into one, do the following:
+$ git rebase -i HEAD~4
+
+#Important: If you've already pushed commits to GitHub, and then squash them locally, 
+you will have to force the push to your branch.
+
+$ git push origin branch-name --force
+Helpful hint: You can always edit your last commit message, before pushing, by using:
+$ git commit --amend
