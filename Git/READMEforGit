@@ -1,0 +1,69 @@
+FOR FIRST TIME:
+===============
+git config --global user.email "ktrivedi@cisco.com"
+git config --global user.name "Ketul Trivedi"
+
+
+clone repository to local (this can done using SSH or HTTPS)
+git clone https://gitlab-sjc.cisco.com/FANaas/fanaas-deployment.git
+
+go to root directory
+   cd fanaas-deployment/
+
+
+just for validation 
+   git branch   # This will show that you have cloned master branch
+
+
+if you want to see configuration of git, go to .git directory and open file 'config'
+
+
+make necessary changes to the code
+
+
+validate using 'git status' and see changes that you have just made
+
+create a branch in your local machine
+   git checkout -b ktrivedi_dev
+
+Add changes to git local ktrivedi_dev repository
+   git add cdvr_tools
+
+
+validate using 'git status' and see changes that you have just made
+
+make object locally with your changes
+   git commit -m "added CSR (not yet configured), FND and FND configuration"
+
+
+push changes to cloud git repository
+   git push --set-upstream origin ktrivedi_dev
+
+
+
+NEXT TIME
+=========
+make necessary changes to the code
+
+validate using 'git status' and see changes that you have just made
+   1. validate all the code that has changed
+   2. validate the branch it is pointing to
+
+if the branch you are pointing is not correct, then use git checkout -b <Branch_Name>
+validate using git branch, if you need to
+
+go to directory that is parent of all changes
+
+add changes to local repository
+   git add .
+
+if you want to add only specific file, use following
+   git add <file_name>
+
+make object locally with your changes 
+   git commit -m "some cosmetic changes"
+
+
+push changes to cloud git repository
+   git push 
+notice that subsequent time, we do do not have to use "--set-upstream origin ktrivedi_dev"
