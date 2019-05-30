@@ -4,3 +4,10 @@ split -l 100000 mybigfile.json
 scp user@ip_of_remote_pc:/home/user/stuff.php /Users/djorge/Desktop
 
 https://www.digitalocean.com/community/questions/warning-remote-host-identification-has-changed
+
+
+watch -n 1 -d <cmd>
+e.g.
+  watch -n 1 -d find .
+This will list down the changes happening in  the directory every 1 seconds.
+  
